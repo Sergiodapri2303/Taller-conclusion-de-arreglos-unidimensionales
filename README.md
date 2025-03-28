@@ -75,3 +75,37 @@ int main() {
     return 0;
 }
 ```
+
+
+Funcionamiento Paso a Paso (python)
+
+Se inicializan dos listas vacías:
+
+vertices: Para almacenar las coordenadas de los vértices.
+
+caras: Para almacenar las caras, definidas por índices de los vértices.
+
+Se solicita al usuario el número de vértices y se itera para capturar sus coordenadas:
+
+Se usa input() para pedir el número de vértices.
+
+En cada iteración, se solicitan las coordenadas x, y y z.
+
+Se almacenan los valores en una tupla (x, y, z) dentro de vertices.
+
+Se solicita al usuario el número de caras:
+
+Se usa input() para pedir el número de caras.
+
+En cada iteración, se solicita al usuario que ingrese los índices de los vértices que conforman la cara.
+
+Se usa map(int, input().split()) para convertir los valores ingresados en una lista de enteros y almacenarlos en caras.
+
+Finalmente, el código imprime la lista de vértices y caras en un formato legible:
+
+Se usa enumerate() para mostrar los vértices con un identificador (V1, V2, etc.).
+
+Se usa otro enumerate() para mostrar las caras con un identificador (F1, F2, etc.).
+
+
+  
